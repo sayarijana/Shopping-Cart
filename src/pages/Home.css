@@ -1,0 +1,37 @@
+.home{
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    margin-top: 7rem;
+}
+
+.noDataDiv{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.cardDiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    padding: 0.5rem;    
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cardDiv {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .cardDiv {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 639px) {
+    .cardDiv {
+        grid-template-columns: 1fr;
+    }
+}
